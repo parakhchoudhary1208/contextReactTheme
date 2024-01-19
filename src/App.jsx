@@ -1,5 +1,7 @@
 import React from "react"
 import { ThemeProvider } from "./Context/theme"
+import Button from "./Components/Button"
+import Card from "./Components/Card"
 
 function App() {
     const [themeMode, setThemeMode] = React.useState("light")
@@ -24,10 +26,12 @@ function App() {
                 <div className="w-full">
                     <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
                         {/* theme btns */}
+                        <Button/>
                     </div>
 
                     <div className="w-full max-w-sm mx-auto">
                         {/* cards */}
+                        <Card/>
                     </div>
                 </div>
             </div>
